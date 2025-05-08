@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><batch mzmine_version="4.0.3">
+    <batchstep method="io.github.mzmine.modules.io.export_features_sirius.SiriusExportModule" parameter_version="1">
+        <parameter name="Feature lists" type="NAME_PATTERN">
+            <name_pattern>Merged*</name_pattern>
+        </parameter>
+        <parameter name="Filename">
+            <current_file>X:\Studenten_Schueler\Philipp_Trollmann\Experiments\FiS-45min-Abstandsmessung\data\sirius-test-automised-batchmode.mgf</current_file>
+            <last_file>X:\Studenten_Schueler\Philipp_Trollmann\Experiments\FiS-45min-Abstandsmessung\data\sirius-test-automised-batchmode.mgf</last_file>
+            <last_file>C:\Program Files\mzmine\insert-filepath\feature-data.mgf</last_file>
+        </parameter>
+        <parameter name="Merge MS/MS" selected="false">
+            <parameter name="Select spectra to merge">across samples</parameter>
+            <parameter name="m/z merge mode">weighted average (remove outliers)</parameter>
+            <parameter name="intensity merge mode">sum intensities</parameter>
+            <parameter name="Expected mass deviation">
+                <absolutetolerance>0.001</absolutetolerance>
+                <ppmtolerance>5.0</ppmtolerance>
+            </parameter>
+            <parameter name="Cosine threshold (%)">0.7</parameter>
+            <parameter name="Signal count threshold (%)">0.2</parameter>
+            <parameter name="Isolation window offset (m/z)">0.0</parameter>
+            <parameter name="Isolation window width (m/z)">3.0</parameter>
+        </parameter>
+        <parameter name="m/z tolerance">
+            <absolutetolerance>0.003</absolutetolerance>
+            <ppmtolerance>5.0</ppmtolerance>
+        </parameter>
+        <parameter name="Only rows with annotation">false</parameter>
+        <parameter name="Exclude multiple charge">false</parameter>
+        <parameter name="Exclude multimers">false</parameter>
+    </batchstep>
+    <batchstep method="io.github.mzmine.modules.io.export_features_csv.CSVExportModularModule" parameter_version="1">
+        <parameter name="Feature lists" type="NAME_PATTERN">
+            <name_pattern>Merged*</name_pattern>
+        </parameter>
+        <parameter name="Filename">
+            <current_file>X:\Studenten_Schueler\Philipp_Trollmann\Experiments\FiS-45min-Abstandsmessung\data\area-test-automised-batchmode.csv</current_file>
+            <last_file>X:\Studenten_Schueler\Philipp_Trollmann\Experiments\FiS-45min-Abstandsmessung\data\area-test-automised-batchmode.csv</last_file>
+        </parameter>
+        <parameter name="Field separator">,</parameter>
+        <parameter name="Identification separator">;</parameter>
+        <parameter name="Remove empty columns">true</parameter>
+        <parameter name="Filter rows">ALL</parameter>
+    </batchstep>
+</batch>
