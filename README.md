@@ -35,3 +35,7 @@ The transformation from raw `.raw` files to the required feature matrix involves
 This entire pre-processing sequence can be automated using the script located at `raw-files-to-data-matrix-pipeline/get_untargeted_annotated_features_from_raw_files.R`.
 
 Metadata files can be created or adapted using the `create_metadata-file.R` script (found in `various-other-files/`). This script will require modifications to align with the specific experimental design and metadata structure of your dataset.
+
+
+## Authorship
+This pipeline and its associated scripts were solely developed by Philipp Trollmann as part of his Master Thesis in Computational Science in the group of Dr. Jürgen Zanghellini and Dr. Samuel Meier-Menches at University of Vienna.
